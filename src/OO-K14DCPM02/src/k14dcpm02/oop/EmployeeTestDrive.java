@@ -4,8 +4,7 @@ public class EmployeeTestDrive {
     public static void main(String[] args) {
         Employee employee = new Employee();
 
-        employee.getName();
-        employee.getSalary();
-        employee.show();
+        employee.inputEmployee();
+        employee.print();
     }
 }
