@@ -1,4 +1,4 @@
-package k14dcpm02.nonstructure;
+package Tuan01.k14dcpm02.nonstructure;
 
 import java.util.Scanner;
 
@@ -42,4 +42,3 @@ public class Bank {
          System.out.println("Account balance: " + accout_balance);
     }
 }
-

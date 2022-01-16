@@ -1,4 +1,4 @@
-package k14dcpm02.structured;
+package Tuan01.k14dcpm02.structured;
 
 import java.util.Scanner;
 
@@ -49,4 +49,3 @@ public class BankStructured {
         
     }
 }
-

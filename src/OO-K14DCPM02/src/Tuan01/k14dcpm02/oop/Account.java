@@ -1,4 +1,4 @@
-package k14dcpm02.oop;
+package Tuan01.k14dcpm02.oop;
 
 public class Account {
     // data
@@ -20,4 +20,3 @@ public class Account {
         System.out.println("Account balance: " + accout_balance);
     }
 }
-
