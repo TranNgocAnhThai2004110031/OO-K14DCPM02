@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Cusomter {
     // data
-    int age, phone;
-    String name, address;
+    static int age, phone;
+    static String name, address;
     // operation
     // functions
     static Scanner sc = new Scanner(System.in);

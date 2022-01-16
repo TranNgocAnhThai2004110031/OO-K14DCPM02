@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Employee {
     // data
-    int id, age, phone;
-    String name, address, position;
-    double salary;
+    static int id, age, phone;
+    static String name, address, position;
+    static double salary;
     // operation
     // functions
     static Scanner sc = new Scanner(System.in);
