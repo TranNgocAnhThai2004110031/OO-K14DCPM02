@@ -5,22 +5,25 @@ import java.util.Scanner;
 public class Student {
     // attributes : data
     // biến
-    static String name, mssv, lop;
-    static double age;
+    String name, mssv, lop;
+    double age;
 
     // menthods : functions
     Scanner sc = new Scanner(System.in);
 
-    void input(){
-        System.out.print("Name: ");
-        name = sc.nextLine();
-        System.out.print("Age: ");
-        age = sc.nextDouble();
-        sc.nextLine();
-        System.out.print("Mssv: ");
-        mssv = sc.nextLine();
-        System.out.print("Lớp: ");
-        lop = sc.nextLine();
+    public Student(){
+
+    }
+
+    public Student(String name, double age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public Student(String name, double age, String mssv, String lop){
+        this(name, age);
+        this.mssv = mssv;
+        this.lop = lop;
     }
 
     void hoc(){
@@ -38,6 +41,19 @@ public class Student {
     void hoatDongNgoaiKhoa(){
         System.out.println("Hoạt động ngoại khoá ");
     }
+
+    void input(){
+        System.out.print("Name: ");
+        name = sc.nextLine();
+        System.out.print("Age: ");
+        age = sc.nextDouble();
+        sc.nextLine();
+        System.out.print("Mssv: ");
+        mssv = sc.nextLine();
+        System.out.print("Lớp: ");
+        lop = sc.nextLine();
+    }
+
 
     void print(){
         System.out.println("\nThông tin sinh viên:");

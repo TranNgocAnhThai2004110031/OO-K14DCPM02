@@ -3,11 +3,17 @@ package Tuan01.k14dcpm02.oop;
 public class XoayHinh {
     // attributes : data
     // biến
-    static String nameShape;
+    String nameShape;
+    int luaChon;
     
     // menthods : functions
+
+    public XoayHinh(String nameShape){
+        this.nameShape = nameShape;      
+    }
+
     void nhapChuot(){
-        System.out.println(" - Nhấp chuột ");
+        System.out.println(" - Nhấp chuột vào shape: " + nameShape);
     }
 
     void xoayHinh360TheoChieuKimDongHo(){
