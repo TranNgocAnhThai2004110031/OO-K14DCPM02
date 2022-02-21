@@ -8,8 +8,11 @@ public class GuessGame {
     private int guessp2;
     private int guessp3;
 
-
-    public void startGame(){
+    public void startGame() {
+        playGame();
+        return;
+    }
+    private void playGame(){
         boolean p1isRight = false;
         boolean p2isRight = false;
         boolean p3isRight = false;
@@ -19,7 +22,7 @@ public class GuessGame {
 
         while(true){
             System.out.println("Số guess là:  " +targetNumber);
-            p1.getNumber();
+            p1.guess();
             p2.guess();
             p3.guess();
 
