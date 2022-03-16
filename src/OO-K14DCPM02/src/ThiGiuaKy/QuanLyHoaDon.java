@@ -36,7 +36,7 @@ public class QuanLyHoaDon {
         }
     }
 
-    public void tongSoLuong() {
+    public void tongSoLuong() { 
         double tongG = 0, tongN = 0, tongTTG = 0, tongTTN = 0;
         for (HoaDonTheoGio a : list) {
             tongG++;

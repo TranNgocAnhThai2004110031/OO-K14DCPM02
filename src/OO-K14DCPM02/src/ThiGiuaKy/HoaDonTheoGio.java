@@ -40,7 +40,7 @@ public class HoaDonTheoGio extends HoaDon{
         if (this.soGioThue > 30) {
             System.out.println("Số giờ đã trên 30 giờ nên không thể tính theo loại hoá giờ!!!");
         }
-    }
+    } 
 
     @Override
     protected void input() throws ParseException {

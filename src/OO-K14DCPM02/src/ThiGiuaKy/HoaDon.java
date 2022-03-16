@@ -79,7 +79,7 @@ public abstract class HoaDon {
         this.maPhong = scs.nextInt();
         System.out.print("- Nhập vào đơn giá: ");
         this.donGia = scs.nextDouble();
-    }
+    } 
 
     public String toString() {
         String str = String.format("%-20d%-20s%-20s%-20d%-20.2f", maHD, ngayVN.format(ngayHD), tenKh, maPhong, donGia);

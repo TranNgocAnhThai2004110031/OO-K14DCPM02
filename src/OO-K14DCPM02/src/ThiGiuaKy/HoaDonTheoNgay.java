@@ -36,7 +36,7 @@ public class HoaDonTheoNgay extends HoaDon{
         } else {
             this.thanhTien = soNgayThue*getDonGia();   
         }
-    }
+    } 
 
     @Override
     protected void input() throws ParseException {
