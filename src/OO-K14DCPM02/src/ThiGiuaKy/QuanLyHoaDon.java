@@ -37,15 +37,19 @@ public class QuanLyHoaDon {
     }
 
     public void tongSoLuong() {
-        double tongG = 0, tongN = 0;
+        double tongG = 0, tongN = 0, tongTTG = 0, tongTTN = 0;
         for (HoaDonTheoGio a : list) {
             tongG++;
+            tongTTG += a.getThanhTien();
         }
         for (HoaDonTheoNgay b : list2) {
             tongN++;
+            tongTTN += b.getThanhTien();
         }
         System.out.println("Tổng số lượng hoá đơn phòng thuê theo giờ: " + tongG);
         System.out.println("Tổng số lượng hoá đơn phòng thuê theo ngày: " + tongN);
+        System.out.println("Tổng thành tiền hoá đơn phòng thuê theo giờ: " + tongTTG);
+        System.out.println("Tổng thành tiền hoá đơn phòng thuê theo ngày: " + tongTTN);
     }
 
     public void inDanhSach() {
