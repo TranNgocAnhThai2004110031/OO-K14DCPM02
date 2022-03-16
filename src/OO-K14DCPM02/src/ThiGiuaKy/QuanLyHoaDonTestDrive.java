@@ -27,7 +27,7 @@ public class QuanLyHoaDonTestDrive {
                     quanLyHoaDon.nhapHoaDonTheoGio();
                     break;
                 case 2:
-                quanLyHoaDon.nhapHoaDonTheoNgay();
+                    quanLyHoaDon.nhapHoaDonTheoNgay();
                     break;
                 case 3:
                     quanLyHoaDon.tongSoLuong();
@@ -42,6 +42,5 @@ public class QuanLyHoaDonTestDrive {
                     break;
             }
         } while (luaChon != 0);
-
     }
 }
