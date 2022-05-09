@@ -46,7 +46,19 @@ public class UITerminal {
         sc.nextLine();
         System.out.print("Email: ");
         String email = sc.nextLine();
+        for (Account account : accObj.accounts.memory) {
+            if (un.equals(account.getUsername())) {
+                System.out.println("Username đã được sử dụng trước đó.");
+                System.out.println("Tạo tài khoản thất bại!!!.");
+                return;
+            } else if (email.equals(account.getEmail())) {
+                System.out.println("Email đã được sử dụng trước đó.");
+                System.out.println("Tạo tài khoản thất bại!!!.");
+                return;
+            }
+        }
         accObj.create_account(un, ps, email);  
+        System.out.println("Tạo tài khoản thành công.");
     }
 
     

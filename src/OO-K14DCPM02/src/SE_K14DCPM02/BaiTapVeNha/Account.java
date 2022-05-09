@@ -49,6 +49,13 @@ public class Account {
     public void login(String un, int ps) {
         username = un;
         password = ps;
+        check_loggedin();
+        if (loggedin == true) {
+            System.out.println("Đăng nhập thành công.");
+        } else {
+            System.out.println("Đăng nhập thất bại!!!!!");
+            System.out.println("Bạn đã nhập sai username hoặc password.");
+        }
     }
 
     public void logout() {
@@ -69,15 +76,10 @@ public class Account {
     }
 
     public boolean check_loggedin() {
-        login(username, password);
         for (Account account : accounts.memory) {
             if (account.getUsername().equals(username) && password == account.getPassword()) {
-                System.out.println("Đăng nhập thành công.");
                 loggedin = true;
-            } else {
-                System.out.println("Đăng nhập thất bại!!!!!");
-                System.out.println("Bạn đã nhập sai username hoặc password.");
-            }
+            } 
         }
         
         return loggedin;
